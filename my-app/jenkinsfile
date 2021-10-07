@@ -4,7 +4,7 @@ node{
   }
   stage('package'){
     def mvnHOME = tool name: 'maven-3', type: 'maven'
-    sh"${mvnHOME}/bin/mvn clean install"
+    sh"${mvnHOME}/bin/mvn /var/lib/jenkins/workspace/jenkinfile-git-maven/my-app/pom.xml package"
     
   }
 }
