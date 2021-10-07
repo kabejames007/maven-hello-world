@@ -1,6 +1,6 @@
 node{
   stage('SCM Chechkout'){
-    git 'https://github.com/kabejames007/maven-hello-world/my-app'
+    git 'https://github.com/kabejames007/maven-hello-world'
   }
   stage('package'){
     def mvnHOME = tool name: 'maven-3', type: 'maven'
